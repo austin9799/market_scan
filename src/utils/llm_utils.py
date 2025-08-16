@@ -1,6 +1,7 @@
 import re
 from google import genai
 from google.genai import types
+from src.constants.config import LLM_MODEL
 
 
 class LLMHandler:
@@ -37,7 +38,7 @@ class LLMHandler:
             )
 
             content_stream = self.client.models.generate_content_stream(
-                model="gemini-2.0-flash",
+                model=LLM_MODEL,
                 contents=contents,
                 config=generate_content_config,
             )
