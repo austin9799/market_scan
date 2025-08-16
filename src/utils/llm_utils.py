@@ -1,12 +1,12 @@
 import re
 from google import genai
 from google.genai import types
-from src.constants.config import LLM_MODEL
 
 
 class LLMHandler:
-    def __init__(self, api_key: str):
+    def __init__(self, api_key: str, model: str = "gemini-2.0-flash"):
         self.api_key = api_key
+        self.model = model
         self._setup()
     
     def _setup(self) -> None:
@@ -38,7 +38,7 @@ class LLMHandler:
             )
 
             content_stream = self.client.models.generate_content_stream(
-                model=LLM_MODEL,
+                model=self.model,
                 contents=contents,
                 config=generate_content_config,
             )

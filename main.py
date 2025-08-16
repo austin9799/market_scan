@@ -2,11 +2,11 @@ import markdown
 import streamlit as st
 from src.utils.llm_utils import LLMHandler
 from src.constants.prompt import PromptLibrary
-from src.constants.config import LLM_API_KEY, APP_TITLE
+from src.constants.config import LLM_API_KEY, APP_TITLE, LLM_MODEL
 
 def main():
 
-    llm_handler = LLMHandler(LLM_API_KEY)
+    llm_handler = LLMHandler(LLM_API_KEY, LLM_MODEL)
     prompt_library = PromptLibrary()
 
     st.markdown(f"<h1 style='text-align: center'>{APP_TITLE}</h1>", unsafe_allow_html=True)
