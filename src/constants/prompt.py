@@ -10,7 +10,22 @@ class PromptLibrary:
     **ACTION:**
     Based on the input, you must conduct in-depth research covering the following pillars:
 
-    **1. Dining Culture & Food Preferences:**
+    **1. Executive Summary**
+    *   **Objective:** Provide a high-level market entry overview.
+    *   **Points to Address:**
+        * Market Potential Overview
+        * Tourist & Local Dining Insights
+        * Casual Dining Gap
+        * Strategic Entry Cities
+
+    **2. Country Overview**
+    *   **Objective:** Outline the macro environment of the target market.
+    *   **Points to Address:**
+        * Demographics & Income Segmentation
+        * Dining Culture & Food Preferences
+        * Competitive Landscape
+
+    **3. Dining Culture & Food Preferences**
     *   **Objective:** Understand the local palate, dining habits, and competitive landscape.
     *   **Search Strategy:**
         *   Analyze restaurant reviews and listings on platforms like TripAdvisor, Google Maps, Zomato, Yelp, etc.
@@ -24,7 +39,24 @@ class PromptLibrary:
         *   Key competitors (domestic chains, international brands, independents).
         *   Strengths and weaknesses of existing competitors.
 
-    **2. Regulatory & Import Environment:**
+    **4. Market Potential**
+    *   **Objective:** Assess the scale of opportunity for the cuisine type.
+    *   **Points to Address:**
+        * National Supply
+        * Domestic Food Culture
+        * Tourist Demand
+        * Strategic Advantage vs. Other Countries
+
+    **5. Key Cities & Location Strategy**
+    *   **Objective:** Identify the best geographic entry points.
+    *   **Points to Address:**
+        * Casablanca
+        * Marrakesh
+        * Agadir
+        * Rabat
+        * Ideal locations within cities (malls, promenades, business hubs)
+
+    **6. Regulatory & Import Environment:**
     *   **Objective:** Identify the legal, and logistical requirements for opening and operating a restaurant.
     *   **Search Strategy:**
         *   Search official government websites (city, state/province, national level).
@@ -36,7 +68,7 @@ class PromptLibrary:
         *   Information on importing specialty ingredients relevant to the cuisine (e.g., tariffs, restrictions, required documentation).
         *   Halaal/kosher or other cultural-religious compliance if relevant.
 
-    **3. Supply Chain & Sourcing Feasibility:**
+    **7. Supply Chain & Sourcing Feasibility:**
     *   **Objective:** Assess the availability and reliability of sourcing for key ingredients.
     *   **Search Strategy:**
         *   Research local wholesale suppliers, food importers, and agricultural markets.
@@ -48,7 +80,7 @@ class PromptLibrary:
         *   Cold chain or logistics infrastructure for perishable goods.
         *   Key supplier examples (wholesale, HORECA distributors).
 
-    **4. Customer Segments & Price Sensitivity:**
+    **8. Customer Segments & Price Sensitivity:**
     *   **Objective:** Identify target customers and their spending behavior.
     *   **Search Strategy:**
         *   Analyze mall/restaurant traffic data, consumer surveys, and tourism reports.
@@ -60,7 +92,7 @@ class PromptLibrary:
         *   Sensitivity to pricing (value-for-money vs. premium focus).
         *   Dining frequency among different groups.
 
-    **5. Financial Modeling & Unit Economics:**
+    **9. Financial Modeling & Unit Economics:**
     *   **Objective:** Gather key cost data to inform a financial projection.
     *   **Search Strategy:**
         *   **Commercial Rent:** Search commercial real estate websites (e.g., LoopNet, Zillow Commercial, regional equivalents). Query: `"commercial rent per square foot/meter in [city]"`.
@@ -72,7 +104,7 @@ class PromptLibrary:
         *   Prices for a few core ingredients essential to the specified cuisine.
         *   **Crucially, always state the currency (e.g., USD, EUR, AED).**
 
-    **6. Risks & Strategic Recommendations:**
+    **10. Risks & Strategic Recommendations:**
     *   **Objective:** Highlight potential challenges and suggest clear entry strategies.
     *   **Search Strategy:**
         *   Review political, economic, and cultural risk reports.
@@ -81,7 +113,7 @@ class PromptLibrary:
         *   Key risks (political/regulatory, supply chain, cultural, competitive).
         *   Actionable recommendations for market entry (franchise vs. owned, best city locations, menu localization, partnerships).
 
-    **7. Areas for Improvement (Gap Analysis):**
+    **11. Areas for Improvement (Gap Analysis):**
     *   **Objective:** Critically evaluate missing or weak points in available data and highlight gaps.
     *   **Points to Address:**
         *   Is the competitive landscape fully mapped, including pricing benchmarks?
@@ -91,7 +123,7 @@ class PromptLibrary:
         *   Are risks covered in enough depth?
         *   Are recommendations sharp and actionable?
 
-    **8. Next Steps:**
+    **12. Next Steps:**
     *   **Objective:** Provide a roadmap for further validation and action.
     *   **Points to Include:**
         *   Collect competitor pricing data where missing.
