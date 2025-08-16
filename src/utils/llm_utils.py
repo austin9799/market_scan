@@ -4,9 +4,8 @@ from google.genai import types
 
 
 class LLMHandler:
-    def __init__(self, api_key: str, model: str = "gemini-2.0-flash"):
+    def __init__(self, api_key: str):
         self.api_key = api_key
-        self.model = model
         self._setup()
     
     def _setup(self) -> None:
@@ -38,7 +37,7 @@ class LLMHandler:
             )
 
             content_stream = self.client.models.generate_content_stream(
-                model=self.model,
+                model="gemini-2.0-flash",
                 contents=contents,
                 config=generate_content_config,
             )

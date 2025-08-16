@@ -2,14 +2,13 @@ import markdown
 import streamlit as st
 from src.utils.llm_utils import LLMHandler
 from src.constants.prompt import PromptLibrary
-from src.constants.config import LLM_API_KEY, APP_TITLE, LLM_MODEL
 
 def main():
 
-    llm_handler = LLMHandler(LLM_API_KEY, LLM_MODEL)
+    llm_handler = LLMHandler(st.secrets["LLM_API_KEY"])
     prompt_library = PromptLibrary()
 
-    st.markdown(f"<h1 style='text-align: center'>{APP_TITLE}</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center'>🍽️ MarketMunch: Restaurant Market Analyzer 📊</h1>", unsafe_allow_html=True)
 
     # Use session state to prevent rerun unless user_input changes
     if "last_input" not in st.session_state:
